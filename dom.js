@@ -101,13 +101,23 @@ function f(item) {
 //
 // let test_5 = document.querySelector('li:nth-child(1)');
 // test_5.textContent= "Maheeb";
+//
+// var newDiv = document.createElement('div');
+// newDiv.className = "hello";
+//
+// var textChild = document.createTextNode('Hello world');
+// newDiv.appendChild(textChild);
+// var container = document.querySelector('header .container');
+// var h1 = document.querySelector('header h1');
+// newDiv.style.fontSize= '30px';
+// container.insertBefore(newDiv,h1);
 
-var newDiv = document.createElement('div');
-newDiv.className = "hello";
 
-var textChild = document.createTextNode('Hello world');
-newDiv.appendChild(textChild);
-var container = document.querySelector('header .container');
-var h1 = document.querySelector('header h1');
-newDiv.style.fontSize= '30px';
-container.insertBefore(newDiv,h1);
+var button = document.getElementById('button').addEventListener('click',buttonClick);
+
+
+function buttonClick() {
+    document.getElementById('header-title').textContent = "Changed";
+
+
+}
